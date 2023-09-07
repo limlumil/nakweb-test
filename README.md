@@ -1,5 +1,9 @@
 # nakweb
 
+This is page demo
+https://nakweb-test.netlify.app/
+
+
 ## Project setup
 ```
 npm install
