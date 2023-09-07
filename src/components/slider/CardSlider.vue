@@ -1,7 +1,10 @@
 <template>
     <div class="slider-card">
         <div class="content">
-            <img :src="image"/>
+            <div class="image">
+
+                <img :src="image" style="width:100%"/>
+            </div>
             
             <strong>{{ title }}</strong>
 
@@ -71,10 +74,15 @@ export default {
 
       min-height: 350px;
 
-      img {
-        border-radius: 3%;
-        width:100%
-      }
+      .image{
+        width:100%;
+        img{
+            border-radius: 0.5rem !important;
+            width:100% 
+        }
+
+    }
+    
 
       strong {
         margin: 20px 0 0;
@@ -83,15 +91,18 @@ export default {
       p {
         font-size: .8em;
         margin: 15px 0px;
+        color:rgb(41, 134, 102);
       }
 
       .button {
         display: inherit;
         padding: 11px 13px;
+        border:none;
         font-weight: 600;
         text-decoration: none;
         text-transform: uppercase;
         cursor: pointer;
       }
     }
+
 </style>

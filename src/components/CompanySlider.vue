@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="base-slider">
     <h2>Exercice - Reproduire le composant :</h2>
     <BaseSlider v-if="dataItems.length" class="company-slide" :totalSlides="dataItems.length" :autoPlay="true"
       :slideDuration="5000">
@@ -11,7 +11,7 @@
         :description ="dataItems[slider.currentIndex].text"
         :buttontext="dataItems[slider.currentIndex].cta"
         :color="`#000`"
-        :backgroundcolor="`#bfef06`"
+        :backgroundcolor="`#ffef06`"
         :link= '`${dataItems[slider.currentIndex].to}`'
         @buttonClick= "(e)=>handleCta(e)"
         />
